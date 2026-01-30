@@ -1,0 +1,52 @@
+name: duolingo
+description: A Duolingo clone made with Flutter and Firebase.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.2.0 # Updated for latest Dart features
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # --- Firebase Core ---
+  firebase_core: ^4.3.0
+  firebase_auth: ^6.1.3
+  cloud_firestore: ^6.1.1
+  firebase_storage: ^13.0.5
+
+  # --- Duolingo Specific Features ---
+  # For the "Duo" character animations and celebration effects
+  lottie: ^3.1.0
+  
+  # For pronunciation and listening exercises
+  just_audio: ^0.9.36
+  flutter_tts: ^4.0.2
+  google_mlkit_translation: ^0.13.0
+  
+  # For the circular progress bars and health hearts
+  percent_indicator: ^4.2.3
+  
+  # --- State Management & Utilities ---
+  # Crucial for tracking XP and current lesson state
+  flutter_riverpod: ^2.5.1
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Don't forget to create an assets folder in your project root!
+  assets:
+    - assets/images/
+    - assets/animation/
+    - assets/sound/
+    - assets/avatars/

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "576256441796",
+    "project_id": "duolingo-a5101",
+    "storage_bucket": "duolingo-a5101.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576256441796:android:48e9e71470f43fe3c07891",
+        "android_client_info": {
+          "package_name": "com.example.duolingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC08oce3IvhtFDSW70shO69KJJz8vDvEWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
