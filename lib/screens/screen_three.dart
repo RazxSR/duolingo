@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:duolingo/screens/screen_four.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tts/flutter_tts.dart';
@@ -216,12 +217,12 @@ class _ScreenThreeState extends State<ScreenThree>{
                         child: ElevatedButton(
                           onPressed: (){
                             Navigator.pop(context);
-                            // Navigator.push(context,
-                            // MaterialPageRoute(
-                            //   builder: (_) =>
-                            //     ScreenThree(levelNumber:widget.levelNumber) 
-                            //   )
-                            // );
+                            Navigator.push(context,
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                ScreenFour(levelNumber:widget.levelNumber) 
+                              )
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: greenPrimary,

@@ -1,7 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:duolingo/auth/signin_screen.dart';
+import 'package:duolingo/screens/leaderboard_screen.dart';
 import 'package:duolingo/screens/screen_one.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:duolingo/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -401,19 +403,19 @@ class _LevelScreenState extends State<LevelScreen> {
               _currentIndex = index;
             });
             if (index == 1) {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (_) => LeaderboardScreen(),
-              //   ),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => LeaderboardScreen(),
+                ),
+              );
             } else if (index == 2) {
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (_) => ProfileScreen(),
-              //   ),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => ProfileScreen(),
+                ),
+              );
             }
           },
           items: [
